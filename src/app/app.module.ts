@@ -17,6 +17,13 @@ import { ProductsComponent } from './products/products.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { NumberonlyDirective } from './customdirectives/numberonly.directive';
 import { HighlightDirective } from './customdirectives/highlight.directive';
+import { PipesComponent } from './pipes/pipes.component';
+import { RemainingPipe } from './remaining.pipe';
+import { MySortPipe } from './my-sort.pipe';
+import { ParentComponent } from './parent/parent.component';
+import { Child1Component } from './child1/child1.component';
+import { Child2Component } from './child2/child2.component';
+import { EmpComponent } from './emp/emp.component';
 
 @NgModule({
   // components, directives , pipes
@@ -33,6 +40,13 @@ import { HighlightDirective } from './customdirectives/highlight.directive';
     EmployeesComponent,
     NumberonlyDirective,
     HighlightDirective,
+    PipesComponent,
+    RemainingPipe,
+    MySortPipe,
+    ParentComponent,
+    Child1Component,
+    Child2Component,
+    EmpComponent,
   ],
   // modules
   imports: [

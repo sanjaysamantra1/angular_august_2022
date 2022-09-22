@@ -1,4 +1,5 @@
 <p appHighlight>directives works!</p>
+<ng-content></ng-content>
 
 <input type="checkbox" [(ngModel)]="flag" (click)="toggleFlag()" />{{ flag }}
 <table *ngIf="flag" class="table table-bordered table-striped">
