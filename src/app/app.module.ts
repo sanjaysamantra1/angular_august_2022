@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,6 +25,7 @@ import { ParentComponent } from './parent/parent.component';
 import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import { EmpComponent } from './emp/emp.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   // components, directives , pipes
@@ -47,6 +49,7 @@ import { EmpComponent } from './emp/emp.component';
     Child1Component,
     Child2Component,
     EmpComponent,
+    UsersComponent,
   ],
   // modules
   imports: [
@@ -55,6 +58,7 @@ import { EmpComponent } from './emp/emp.component';
     FormsModule,
     NgxPaginationModule,
     Ng2SearchPipeModule,
+    HttpClientModule,
   ],
   // Services/ Injectables
   providers: [],
