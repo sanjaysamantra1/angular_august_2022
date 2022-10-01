@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MathService } from '../math.service';
 
 @Component({
   selector: 'app-employees',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employees.component.css'],
 })
 export class EmployeesComponent implements OnInit {
-  constructor() {}
+  constructor(public mathService: MathService) {}
 
   ngOnInit(): void {}
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from './products.json';
 import Swal from 'sweetalert2';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-products',
@@ -8,7 +9,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
-  constructor() {}
+  constructor(private cartService:CartService) {}
 
   ngOnInit(): void {}
 
@@ -24,8 +25,9 @@ export class ProductsComponent implements OnInit {
       this.products.sort((p1: any, p2: any) => p2.price - p1.price);
     }
   }
-  addToCart() {
+  addToCart(prod:any) {
     // alert('Your Item is added to Cart');
-    Swal.fire('Good Job!', 'Your Item is added to cart', 'success');
+    // Swal.fire('Good Job!', 'Your Item is added to cart', 'success');
+    this.cartService.addItemToCart(prod)
   }
 }
