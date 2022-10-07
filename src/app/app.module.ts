@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -41,6 +41,17 @@ import { Observable4Component } from './observable4/observable4.component';
 import { Message1Component } from './message1/message1.component';
 import { Message2Component } from './message2/message2.component';
 import { CartComponent } from './cart/cart.component';
+import { Form1Component } from './form1/form1.component';
+import { Form2Component } from './form2/form2.component';
+import { Form3Component } from './form3/form3.component';
+import { ModelDrivenForm1Component } from './model-driven-form1/model-driven-form1.component';
+import { ModelDrivenForm2Component } from './model-driven-form2/model-driven-form2.component';
+import { HomeComponent } from './home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { CareersComponent } from './careers/careers.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   // components, directives , pipes
@@ -76,6 +87,16 @@ import { CartComponent } from './cart/cart.component';
     Message1Component,
     Message2Component,
     CartComponent,
+    Form1Component,
+    Form2Component,
+    Form3Component,
+    ModelDrivenForm1Component,
+    ModelDrivenForm2Component,
+    HomeComponent,
+    AboutusComponent,
+    CareersComponent,
+    ContactusComponent,
+    NotfoundComponent,
   ],
   // modules
   imports: [
@@ -85,6 +106,8 @@ import { CartComponent } from './cart/cart.component';
     NgxPaginationModule,
     Ng2SearchPipeModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   // Services/ Injectables
   providers: [
